@@ -1,0 +1,109 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body style */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #5e72e4, #825ee4);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the main content */
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
+}
+
+/* Heading style */
+h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Button style */
+button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:disabled {
+    background-color: #7f8c8d;
+    cursor: not-allowed;
+}
+
+button#startButton {
+    background-color: #28a745;
+    color: white;
+}
+
+button#startButton:hover {
+    background-color: #218838;
+}
+
+button#stopButton {
+    background-color: #e74c3c;
+    color: white;
+}
+
+button#stopButton:hover {
+    background-color: #c0392b;
+}
+
+/* Info section style */
+.info {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.info p {
+    margin: 10px 0;
+}
+
+/* Error message style */
+#error {
+    margin-top: 20px;
+    color: #ff4757;
+    font-size: 1em;
+}
+
+/* Responsive styling */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    .info p {
+        font-size: 1em;
+    }
+}

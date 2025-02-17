@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Tracker </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeTrack App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1> Track Your Root</h1>
+        
+        <button id="startButton">Start Root </button>
+ <button id="stopButton" disabled>Stop Root </button>
+
+        <div class="info">
+            <p><strong>Time Used:</strong> <span id="timeElapsed">0</span> seconds</p>
+            <p><strong>Distance Traveled:</strong> <span id="distanceTraveled">0</span> meters</p>
+        </div>
+
+        <div id="error" style="color: red; display: none;">
+            <p>Geolocation is not supported or enabled in your browser.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
